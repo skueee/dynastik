@@ -13,7 +13,7 @@ export async function GET(request: NextRequest) {
   const result = await response.json();
   const stars: number = result.count;
 
-  const svg = generate(data, [{ key: "stars", replace: String(stars) }]);
+  const svg = generate(data, [{ key: "replaceme", replace: String(stars) }]);
 
   return new Response(svg, {
     status: 200,
