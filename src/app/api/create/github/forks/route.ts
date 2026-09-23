@@ -7,9 +7,7 @@ export async function GET(request: NextRequest) {
   const repo = searchParams.get("repo");
   const user = searchParams.get("user");
 
-  const response = await fetch(
-    `https://api.github.com/repos/${user}/${repo}`,
-  );
+  const response = await fetch(`https://api.github.com/repos/${user}/${repo}`);
   const result = await response.json();
   const forks: number = result.forks_count;
 

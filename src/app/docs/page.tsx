@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { Label } from "@/components/ui/label";
 
 export default function Docs() {
   return (
@@ -8,8 +9,8 @@ export default function Docs() {
         <div className="w-full flex flex-col gap-2">
           <ListEntry text="Stars count" />
           <ListEntry text="Followers count" />
-          <ListEntry text="Commit count" />
-          <ListEntry text="Repos count" />
+          <ListEntry text="Forks count" />
+          <ListEntry text="Languages count" />
         </div>
       </div>
     </div>
@@ -23,7 +24,7 @@ interface ListEntryProps {
 export function ListEntry({ text }: ListEntryProps) {
   return (
     <button className="hover:bg-gray-700 items-center justify-between flex px-2 rounded-full w-full h-full ">
-      <label className="text-2xl">{text}</label>
+      <Label className="text-2xl">{text}</Label>
       <ArrowRight />
     </button>
   );

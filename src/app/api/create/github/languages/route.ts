@@ -13,7 +13,9 @@ export async function GET(request: NextRequest) {
   const result = await response.json();
   const languages: number = Object.keys(result).length;
 
-  const svg = generate(data, [{ key: "replaceme", replace: String(languages) }]);
+  const svg = generate(data, [
+    { key: "replaceme", replace: String(languages) },
+  ]);
 
   return new Response(svg, {
     status: 200,
