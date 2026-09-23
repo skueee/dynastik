@@ -3,8 +3,8 @@
 import createBadge from "./generate"
 
 function base64ToUint8Array(base64: string): Uint8Array {
-  const binaryString = atob(base64);
-  return Uint8Array.from(binaryString, (char) => char.charCodeAt(0));
+  const buffer = Buffer.from(base64, 'base64')
+  return buffer
 }
 
 // This function takes svgData (base64 encoded), and the keys dict
