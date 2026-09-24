@@ -7,6 +7,12 @@ export async function GET(request: NextRequest) {
   const repo = searchParams.get("repo");
   const user = searchParams.get("user");
 
+  if (!data || !user || !repo) {
+      return new Response("Missing 'data' or 'user' query parameter", {
+        status: 400,
+      });
+    }
+
   const response = await fetch(
     `https://api.github.com/repos/${user}/${repo}/stargazers/count`,
   );

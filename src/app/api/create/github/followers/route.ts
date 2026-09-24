@@ -6,6 +6,12 @@ export async function GET(request: NextRequest) {
   const data = searchParams.get("data");
   const user = searchParams.get("user");
 
+  if (!data || !user) {
+      return new Response("Missing 'data' or 'user' query parameter", {
+        status: 400,
+      });
+  }
+
   const response = await fetch(`https://api.github.com/users/${user}`);
   const result = await response.json();
   const followers: number = result.followers;
