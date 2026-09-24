@@ -19,12 +19,10 @@ export default function Page() {
     const repo = formData.get("repo") as string;
     const svg = formData.get("svg") as string;
 
-
-    const result = generate_url(
-      "/api/create/github/stars",
-      svg,
-      { user: user, repo: repo },
-    );
+    const result = generate_url("/api/create/github/stars", svg, {
+      user: user,
+      repo: repo,
+    });
 
     setGeneratedUrl(result);
   }

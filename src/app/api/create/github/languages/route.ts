@@ -8,9 +8,9 @@ export async function GET(request: NextRequest) {
   const user = searchParams.get("user");
 
   if (!data || !user || !repo) {
-      return new Response("Missing 'data' or 'user' query parameter", {
-        status: 400,
-      });
+    return new Response("Missing 'data' or 'user' query parameter", {
+      status: 400,
+    });
   }
 
   const response = await fetch(

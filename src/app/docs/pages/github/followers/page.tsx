@@ -18,11 +18,9 @@ export default function Page() {
     const user = formData.get("user") as string;
     const svg = formData.get("svg") as string;
 
-    const result = generate_url(
-      "/api/create/github/followers",
-      svg,
-      { user: user },
-    );
+    const result = generate_url("/api/create/github/followers", svg, {
+      user: user,
+    });
 
     setGeneratedUrl(result);
   }

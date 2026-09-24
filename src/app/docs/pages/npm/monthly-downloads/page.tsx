@@ -18,11 +18,9 @@ export default function Page() {
     const repo = formData.get("repo") as string;
     const svg = formData.get("svg") as string;
 
-    const result = generate_url(
-      "/api/create/npm/monthly-downloads",
-      svg,
-      { repo: repo },
-    );
+    const result = generate_url("/api/create/npm/monthly-downloads", svg, {
+      repo: repo,
+    });
 
     setGeneratedUrl(result);
   }
