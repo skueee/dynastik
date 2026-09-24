@@ -19,8 +19,6 @@ export default function Page() {
     const repo = formData.get("repo") as string;
     const svg = formData.get("svg") as string;
 
-    console.log(svg)
-    console.log(user + " " + repo)
 
     const result = generate_url(
       "/api/create/github/languages",
