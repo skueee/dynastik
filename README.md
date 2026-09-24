@@ -1,36 +1,14 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dynastik
 
-## Getting Started
+Dynastik is an app that let you add custom and dynamic SVG stickers anywhere you want (like a github readme !)
 
-First, run the development server:
+## How to use ?
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Checkout [how to use](https://github.com/skueee/dynastik/blob/main/HOWTO.md)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Credit
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- NextJS : [nextjs.org/](https://nextjs.org/)
+- Shields (for inpiration) : [shields.io](https://shields.io/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<img src="https://dynastik.vercel.app/api/create/github/stars?data=PHN2ZyBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgNjA2IDYzMyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWx0ZXI9InVybCgjYSkiPjxwYXRoIGQ9Im0yOTIgMGM3Ny40NDMgMCAxNTEuNzIgMjcuODIgMjA2LjQ4IDc3LjM0IDU0Ljc2MSA0OS41MiA4NS41MjUgMTE2LjY4IDg1LjUyNSAxODYuNzJ2MjUzLjk0YzAgMzguNjYtMzEuMzQgNzAtNzAgNzBoLTQ0NGMtMzguNjYgMC03MC0zMS4zNC03MC03MHYtMjUzLjk0YzAtNzAuMDMyIDMwLjc2NC0xMzcuMiA4NS41MjUtMTg2LjcyIDU0Ljc2LTQ5LjUyIDEyOS4wMy03Ny4zNCAyMDYuNDgtNzcuMzR6IiBmaWxsPSIjOEQ4M0ZGIi8%2BPHBhdGggZD0ibTI5MiA3Yzc1LjgwMSAwIDE0OC4zNyAyNy4yMzcgMjAxLjc4IDc1LjUzMiA1My4zODMgNDguMjc0IDgzLjIyIDExMy41OSA4My4yMiAxODEuNTJ2MjUzLjk0YzAgMzQuNzk0LTI4LjIwNiA2My02MyA2M2gtNDQ0Yy0zNC43OTQgMC02My0yOC4yMDYtNjMtNjN2LTI1My45NGMwLTY3LjkzNSAyOS44MzctMTMzLjI1IDgzLjIyLTE4MS41MiA1My40MDYtNDguMjk1IDEyNS45OC03NS41MzIgMjAxLjc4LTc1LjUzMnoiIHN0cm9rZT0iIzE5MTU0QSIgc3Ryb2tlLXdpZHRoPSIxNCIvPjwvZz48dGV4dCBmaWxsPSIjMTkxNTRBIiBmb250LWZhbWlseT0iUm9ib3RvIEZsZXgiIGZvbnQtc2l6ZT0iMzI1IiBmb250LXdlaWdodD0iODAwIiBsZXR0ZXItc3BhY2luZz0iMGVtIiBzdHlsZT0id2hpdGUtc3BhY2U6cHJlIiB4bWw6c3BhY2U9InByZXNlcnZlIj48dHNwYW4geD0iMTMwLjQ1MiIgeT0iMzI3LjU4NCI%2BeyF9cmVwbGFjZW1leyF9PC90c3Bhbj48L3RleHQ%2BPHRleHQgZmlsbD0iIzE5MTU0QSIgZm9udC1mYW1pbHk9IlJvYm90byBGbGV4IiBmb250LXNpemU9IjcyIiBmb250LXdlaWdodD0iODAwIiBsZXR0ZXItc3BhY2luZz0iMGVtIiBzdHlsZT0id2hpdGUtc3BhY2U6cHJlIiB4bWw6c3BhY2U9InByZXNlcnZlIj48dHNwYW4geD0iMTQ3LjE5OSIgeT0iNDMzLjYwOSI%2BU3RhcnMgb24KPC90c3Bhbj48dHNwYW4geD0iMTc2LjczIiB5PSI1MTcuNjA5Ij5HaXRodWI8L3RzcGFuPjwvdGV4dD48ZGVmcz48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIiB3aWR0aD0iNjA2IiBoZWlnaHQ9IjYzMyIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiPjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8%2BPGZlQ29sb3JNYXRyaXggaW49IlNvdXJjZUFscGhhIiByZXN1bHQ9ImhhcmRBbHBoYSIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAxMjcgMCIvPjxmZU9mZnNldCBkeD0iMjIiIGR5PSI0NSIvPjxmZUNvbXBvc2l0ZSBpbjI9ImhhcmRBbHBoYSIgb3BlcmF0b3I9Im91dCIvPjxmZUNvbG9yTWF0cml4IHZhbHVlcz0iMCAwIDAgMCAwLjA5ODAzOTIgMCAwIDAgMCAwLjA4MjM1MjkgMCAwIDAgMCAwLjI5MDE5NiAwIDAgMCAxIDAiLz48ZmVCbGVuZCBpbjI9IkJhY2tncm91bmRJbWFnZUZpeCIgcmVzdWx0PSJlZmZlY3QxX2Ryb3BTaGFkb3dfNzIxMl8zOTQiLz48ZmVCbGVuZCBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJlZmZlY3QxX2Ryb3BTaGFkb3dfNzIxMl8zOTQiIHJlc3VsdD0ic2hhcGUiLz48L2ZpbHRlcj48L2RlZnM%2BPC9zdmc%2B&user=skueee&repo=dynastik" alt="Stars Badge" width=200>

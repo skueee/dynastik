@@ -5,22 +5,21 @@ export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
   const data = searchParams.get("data");
   const repo = searchParams.get("repo");
-  const user = searchParams.get("user");
 
-  if (!data || !user || !repo) {
+  if (!data || !repo) {
     return new Response("Missing 'data' or 'user' query parameter", {
       status: 400,
     });
   }
 
   const response = await fetch(
-    `https://api.github.com/repos/${user}/${repo}/languages`,
+    `https://api.npmjs.org/downloads/point/last-month/${repo}`,
   );
   const result = await response.json();
-  const languages: number = Object.keys(result).length;
+  const downloads: number = result.downloads;
 
   const svg = generate(data, [
-    { key: "replaceme", replace: String(languages) },
+    { key: "replaceme", replace: String(downloads) },
   ]);
 
   return new Response(svg, {

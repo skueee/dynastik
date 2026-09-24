@@ -15,12 +15,10 @@ export default function Page() {
 
     const formData = new FormData(event.currentTarget);
 
-    const user = formData.get("user") as string;
     const repo = formData.get("repo") as string;
     const svg = formData.get("svg") as string;
 
-    const result = generate_url("/api/create/github/stars", svg, {
-      user: user,
+    const result = generate_url("/api/create/npm/monthly-downloads", svg, {
       repo: repo,
     });
 
@@ -31,12 +29,8 @@ export default function Page() {
     <div className="flex flex-col gap-10">
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="space-y-2">
-          <Label htmlFor="user">user</Label>
-          <Input id="user" name="user" placeholder="torvalds" />
-        </div>
-        <div className="space-y-2">
-          <Label htmlFor="repo">repo</Label>
-          <Input id="repo" name="repo" placeholder="linux" />
+          <Label htmlFor="user">repo</Label>
+          <Input id="repo" name="repo" placeholder="no" />
         </div>
         <div className="space-y-2">
           <Label htmlFor="svg">SVG</Label>
