@@ -21,6 +21,12 @@ export default function Docs() {
             <ListEntry text="Languages count" href="/docs/pages/github/languages" />
           </div>
         </div>
+        <div className="flex flex-col gap-6 p-6 rounded-xl bg-gray-800">
+          <label className="text-4xl font-bold">NPM</label>
+          <div className="w-full flex flex-col gap-2">
+            <ListEntry text="Monthly downloads" href="/docs/pages/npm/monthly-downloads" />
+          </div>
+        </div>
       </div>
     </div>
   );
