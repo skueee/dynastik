@@ -2,6 +2,10 @@
 
 Dynastik is an app that let you add custom and dynamic SVG stickers anywhere you want (like a github readme !)
 
+## What is this ?
+
+THis is an app that let you generate custom dynamics stickers with svg ! Just create an svg, and the app will make it sync with actual data.
+
 ## How to use ?
 
 Checkout [how to use](https://github.com/skueee/dynastik/blob/main/HOWTO.md)
