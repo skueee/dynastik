@@ -16,5 +16,5 @@ export function generate_url(url: string, svg: string, args = {}) {
     ...args
   });
 
-  return `${url}?${params.toString()}`
+  return `https://dynatik.vercel.app${url}?${params.toString()}`
 }
