@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Docs() {
   return (
-    <div className="bg-black text-slate-100">
+    <div className="">
       <header className="px-20 py-5 flex items-center justify-between">
         <label className="text-4xl font-black">Dynastik</label>
         <a
@@ -18,7 +18,7 @@ export default function Docs() {
       </header>
 
       <div className="min-h-screen py-2 px-12 flex flex-col gap-8">
-        <div className="flex flex-col gap-6 p-6 rounded-xl bg-gray-800">
+        <div className="flex flex-col gap-6 p-6 rounded-xl bg-gray-400">
           <label className="text-4xl font-bold">Github</label>
           <div className="w-full flex flex-col gap-2">
             <ListEntry text="Stars count" href="/docs/pages/github/stars" />
@@ -33,7 +33,7 @@ export default function Docs() {
             />
           </div>
         </div>
-        <div className="flex flex-col gap-6 p-6 rounded-xl bg-gray-800">
+        <div className="flex flex-col gap-6 p-6 rounded-xl bg-gray-400">
           <label className="text-4xl font-bold">NPM</label>
           <div className="w-full flex flex-col gap-2">
             <ListEntry
