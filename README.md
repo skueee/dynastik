@@ -15,15 +15,20 @@ Checkout [how to use](https://github.com/skueee/dynastik/blob/main/HOWTO.md)
 To run locally, follow these steps (you need pnpm installed) :
 
 1. Clone the repository
+
 ```
 git clone https://github.com/skueee/dynastik.git
 cd dynastik
 ```
+
 2. Get the dependencies
+
 ```
 pnpm install
 ```
+
 3. Run the website
+
 ```
 pnpm run dev
 ```

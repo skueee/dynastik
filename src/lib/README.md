@@ -22,13 +22,16 @@ It minifies the svg, encode it, then format a url and returns it as a string
 
 **generate_url**
 
-The main function, it takes a url as a string, a svg as a string,  args as a dictionnary and returns a url string.
+The main function, it takes a url as a string, a svg as a string, args as a dictionnary and returns a url string.
 
 Args should be like this :
+
 ```
 { parameter1:value1, parameter2:value2 }
 ```
+
 And will result in this :
+
 ```
 ?parameter1=value1&parameter2:value2
 ```
