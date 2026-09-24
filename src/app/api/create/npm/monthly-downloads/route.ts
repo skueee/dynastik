@@ -3,6 +3,7 @@ import { NextRequest } from "next/server";
 
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
+  const data = searchParams.get("data");
   const repo = searchParams.get("repo");
 
   if (!data || !repo) {
